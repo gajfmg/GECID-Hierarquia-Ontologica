@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/unnamed.owl#"
+     xml:base="http://www.owl-ontologies.com/unnamed.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/unnamed.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#comentario_tabela -->
+
+    <owl:AnnotationProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#comentario_tabela"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#nome_objeto -->
+
+    <owl:AnnotationProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#nome_objeto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#chave_estrangeira -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#chave_estrangeira">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Tabela"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#chave_primaria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#chave_primaria">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Tabela"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Aplicacoes_de_Software -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Aplicacoes_de_Software">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Recursos_Computacionais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Computadores_Pessoais -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Computadores_Pessoais">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#MicroInformatica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Dispositivos_Moveis -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Dispositivos_Moveis">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#MicroInformatica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Indice -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Indice">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Objetos_de_Banco_de_Dados"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Tabela"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Visao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Comunicacao -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Comunicacao">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Recursos_Computacionais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Hardware -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Recursos_Computacionais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Internet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Internet">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Comunicacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Intranet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Intranet">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Comunicacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#MicroInformatica -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#MicroInformatica">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Objetos_de_Banco_de_Dados -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Objetos_de_Banco_de_Dados">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Aplicacoes_de_Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Recursos_Computacionais -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Recursos_Computacionais"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Rede_Local_de_Computadores -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Rede_Local_de_Computadores">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Comunicacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Servidores -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Servidores">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#InfraEstrutura_de_Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Sistemas_de_Informacao -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Sistemas_de_Informacao">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Aplicacoes_de_Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Tabela -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Tabela">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Objetos_de_Banco_de_Dados"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Visao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Visao -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Visao">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Objetos_de_Banco_de_Dados"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#tb_cliente -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#tb_cliente">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Tabela"/>
+        <chave_estrangeira rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">FK_CLIENTE_1</chave_estrangeira>
+        <chave_primaria rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ID_CLIENTE</chave_primaria>
+        <comentario_tabela rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tabela de clientes</comentario_tabela>
+        <nome_objeto rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TB_CLIENTE</nome_objeto>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
